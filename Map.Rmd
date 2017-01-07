@@ -1,0 +1,14 @@
+---
+title: "Dutch's Map"
+date: "January 7, 2017"
+output: html_document
+---
+
+##January 7, 2017
+```{r, echo=FALSE, warning=FALSE}
+library(leaflet)
+map <- leaflet() %>%
+    addTiles() %>%
+    addMarkers(lng=4.8952, lat=52.3702, popup = "Ze Capital")
+map
+```
